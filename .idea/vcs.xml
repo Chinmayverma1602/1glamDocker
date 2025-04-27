@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/frappe_docker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frappe_docker/development/frappe-bench/apps/erpnext" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frappe_docker/development/frappe-bench/apps/frappe" vcs="Git" />
   </component>
 </project>

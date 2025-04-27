@@ -53,15 +53,39 @@
             border-radius: 5px;
             text-decoration: none;
             margin-top: 20px;
+            margin-right: 10px;
         }
         .btn:hover {
             background-color: #2980b9;
             text-decoration: none;
         }
+        .btn-primary {
+            background-color: #27ae60;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 15px 25px;
+        }
+        .btn-primary:hover {
+            background-color: #2ecc71;
+        }
+        .action-container {
+            text-align: center;
+            padding: 30px;
+            margin: 30px 0;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #eee;
+        }
     </style>
 </head>
 <body>
     <h1>1Glam Docker - ERPNext Deployment</h1>
+    
+    <div class="action-container">
+        <h2 style="margin-top: 0;">Access the ERPNext Application</h2>
+        <p>Click the button below to access the ERPNext application where custom DocTypes are being created.</p>
+        <a href="http://erpnext.1glam.com" class="btn btn-primary">Launch ERPNext Application</a>
+    </div>
     
     <div class="container">
         <p>This repository contains Docker configuration for running ERPNext v15.</p>

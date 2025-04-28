@@ -1,0 +1,49 @@
+2025-04-28 07:49:36,628 DEBUG cd frappe-bench && python3 -m venv env
+2025-04-28 07:49:46,359 DEBUG cd frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-04-28 07:49:51,514 DEBUG cd frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-04-28 07:49:54,877 LOG Getting frappe
+2025-04-28 07:49:54,877 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2025-04-28 07:50:03,343 LOG Installing frappe
+2025-04-28 07:50:03,343 DEBUG cd /workspace/development/frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/development/frappe-bench/apps/frappe 
+2025-04-28 07:52:45,441 DEBUG cd /workspace/development/frappe-bench/apps/frappe && yarn install --check-files
+2025-04-28 07:53:38,694 DEBUG cd frappe-bench && bench build
+2025-04-28 07:53:39,016 INFO /home/frappe/.local/bin/bench build
+2025-04-28 07:54:15,881 LOG setting up backups
+2025-04-28 07:54:15,918 LOG backups were set up
+2025-04-28 07:54:15,919 INFO Bench frappe-bench initialized
+2025-04-28 07:54:32,177 INFO /home/frappe/.local/bin/bench set-config -g db_host mariadb
+2025-04-28 07:54:33,709 INFO /home/frappe/.local/bin/bench set-config -g redis_cache redis://redis-cache:6379
+2025-04-28 07:54:34,872 INFO /home/frappe/.local/bin/bench set-config -g redis_queue redis://redis-queue:6379
+2025-04-28 07:54:36,036 INFO /home/frappe/.local/bin/bench set-config -g redis_socketio redis://redis-queue:6379
+2025-04-28 07:55:36,458 INFO /home/frappe/.local/bin/bench new-site --db-root-password 123 --admin-password admin development.localhost
+2025-04-28 07:56:23,752 INFO /home/frappe/.local/bin/bench new-site --db-root-password 123 --admin-password admin development.localhost
+2025-04-28 07:56:36,676 INFO /home/frappe/.local/bin/bench new-site --db-root-password 123 --admin-password admin development.localhost
+2025-04-28 07:58:15,294 INFO /home/frappe/.local/bin/bench --site development.localhost set-config developer_mode 1
+2025-04-28 07:58:16,554 INFO /home/frappe/.local/bin/bench --site development.localhost clear-cache
+2025-04-28 07:58:26,278 INFO /home/frappe/.local/bin/bench get-app --branch version-14 --resolve-deps erpnext
+2025-04-28 07:58:27,518 LOG Getting erpnext
+2025-04-28 07:58:27,519 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2025-04-28 07:58:35,207 LOG Installing erpnext
+2025-04-28 07:58:35,208 DEBUG cd /workspace/development/frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/development/frappe-bench/apps/erpnext 
+2025-04-28 07:59:08,944 DEBUG cd /workspace/development/frappe-bench/apps/erpnext && yarn install --check-files
+2025-04-28 07:59:11,293 DEBUG bench build --app erpnext
+2025-04-28 07:59:11,613 INFO /home/frappe/.local/bin/bench build --app erpnext
+2025-04-28 07:59:27,622 INFO /home/frappe/.local/bin/bench --site development.localhost install-app erpnext
+2025-04-28 08:02:33,503 INFO /home/frappe/.local/bin/bench start
+2025-04-28 08:02:34,135 INFO /home/frappe/.local/bin/bench worker
+2025-04-28 08:02:34,366 INFO /home/frappe/.local/bin/bench serve --port 8000
+2025-04-28 08:02:34,729 INFO /home/frappe/.local/bin/bench watch
+2025-04-28 08:02:34,732 INFO /home/frappe/.local/bin/bench schedule
+2025-04-28 08:25:46,616 INFO /home/frappe/.local/bin/bench --site development.localhost console --run-path=frappe.db.get_all("DocType", filters={"name": "useradderess"})
+2025-04-28 08:26:00,970 INFO /home/frappe/.local/bin/bench --site development.localhost console
+2025-04-28 14:25:53,144 INFO /home/roshan-singh/.local/bin/bench start
+2025-04-28 14:25:53,164 WARNING /home/roshan-singh/.local/bin/bench start executed with exit code 1
+2025-04-28 08:57:04,807 INFO /home/frappe/.local/bin/bench start
+2025-04-28 08:57:06,229 INFO /home/frappe/.local/bin/bench schedule
+2025-04-28 08:57:06,252 INFO /home/frappe/.local/bin/bench serve --port 8000
+2025-04-28 08:57:06,362 INFO /home/frappe/.local/bin/bench watch
+2025-04-28 08:57:06,391 INFO /home/frappe/.local/bin/bench worker
+2025-04-28 09:07:05,121 INFO /home/frappe/.local/bin/bench set-config developer_mode 1
+2025-04-28 10:09:05,420 INFO /home/frappe/.local/bin/bench sync-apps
+2025-04-28 10:09:12,362 INFO /home/frappe/.local/bin/bench migrate
+2025-04-28 10:09:26,077 INFO /home/frappe/.local/bin/bench --site development migrate

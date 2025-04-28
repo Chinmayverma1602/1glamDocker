@@ -83,6 +83,14 @@
             margin: 20px 0;
             border-radius: 3px;
         }
+        .alert {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 3px;
+            color: #721c24;
+        }
     </style>
 </head>
 <body>
@@ -90,12 +98,20 @@
     
     <div class="action-container">
         <h2 style="margin-top: 0;">Access the ERPNext Application</h2>
-        <p>Click the button below to access the ERPNext application where custom DocTypes are being created.</p>
-        <a href="https://development.1glam.in" class="btn btn-primary">Launch ERPNext Application</a>
+        <p>The ERPNext application is available for installation via Docker. Follow the setup instructions below to get started.</p>
+        <button class="btn btn-primary" id="demoBtn" onclick="showDemoMessage()">Launch Demo Application</button>
+    </div>
+    
+    <div class="alert" id="demoMessage" style="display: none;">
+        <p><strong>Note:</strong> The live demo is not available yet. The public server is being configured. Please follow the instructions below to set up a local development environment.</p>
     </div>
     
     <div class="note">
-        <p><strong>Note:</strong> This is a publicly accessible link to the ERPNext instance. If you're running your own local instance, you can access it at <code>http://development.localhost:8000/</code> after following the setup instructions below.</p>
+        <p><strong>Setup Required:</strong> To access the ERPNext application, you need to either:</p>
+        <ol>
+            <li>Set up your local development environment using Docker (instructions below), or</li>
+            <li>Deploy to a server with a public IP address and configure your domain to point to it.</li>
+        </ol>
     </div>
     
     <div class="container">
@@ -137,11 +153,28 @@ cd 1glamDocker</code></pre>
     <h2>Stopping the Server</h2>
     <pre><code>docker-compose -f frappe_docker/pwd.yml down</code></pre>
 
+    <h2>Public Deployment Instructions</h2>
+    <p>If you want to make your ERPNext instance publicly accessible, follow these steps:</p>
+    <ol>
+        <li>Set up a server with a public IP address</li>
+        <li>Install Docker and Docker Compose on the server</li>
+        <li>Configure DNS for your domain to point to your server's IP address</li>
+        <li>Set up HTTPS using Let's Encrypt</li>
+        <li>Update the site configuration to use your domain</li>
+    </ol>
+    <p>For detailed deployment instructions, please refer to the <a href="https://github.com/frappe/frappe_docker">official Frappe Docker documentation</a>.</p>
+
     <h2>License</h2>
     <p>ERPNext is licensed under GNU/GPLv3.</p>
 
     <footer style="margin-top: 50px; text-align: center; color: #7f8c8d; font-size: 0.9em;">
-        <p>This page is hosted on Netlify. The ERPNext application is deployed on a separate server with Docker support.</p>
+        <p>This page is hosted on Netlify. The ERPNext application requires separate hosting with Docker support.</p>
     </footer>
+
+    <script>
+        function showDemoMessage() {
+            document.getElementById('demoMessage').style.display = 'block';
+        }
+    </script>
 </body>
 </html> 

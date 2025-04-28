@@ -76,6 +76,13 @@
             border-radius: 10px;
             border: 1px solid #eee;
         }
+        .note {
+            background-color: #fef9e7;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
@@ -84,7 +91,11 @@
     <div class="action-container">
         <h2 style="margin-top: 0;">Access the ERPNext Application</h2>
         <p>Click the button below to access the ERPNext application where custom DocTypes are being created.</p>
-        <a href="http://development.localhost:8000/" class="btn btn-primary">Launch ERPNext Application</a>
+        <a href="https://development.1glam.in" class="btn btn-primary">Launch ERPNext Application</a>
+    </div>
+    
+    <div class="note">
+        <p><strong>Note:</strong> This is a publicly accessible link to the ERPNext instance. If you're running your own local instance, you can access it at <code>http://development.localhost:8000/</code> after following the setup instructions below.</p>
     </div>
     
     <div class="container">
@@ -130,7 +141,7 @@ cd 1glamDocker</code></pre>
     <p>ERPNext is licensed under GNU/GPLv3.</p>
 
     <footer style="margin-top: 50px; text-align: center; color: #7f8c8d; font-size: 0.9em;">
-        <p>This page is hosted on Netlify. The actual application needs to be deployed on a server with Docker support.</p>
+        <p>This page is hosted on Netlify. The ERPNext application is deployed on a separate server with Docker support.</p>
     </footer>
 </body>
 </html> 

@@ -1,29 +1,55 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-04-28 15:35:25.804720",
+ "creation": "2025-04-28 16:13:16.956546",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "car"
+  "user",
+  "fee_type",
+  "fee",
+  "max_distance"
  ],
  "fields": [
   {
-   "fieldname": "car",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fee_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Fee Type",
+   "options": "per_km\nper_trip",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fee",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "car",
+   "label": "Fee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "max_distance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Max Distance",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-28 15:35:25.804720",
+ "modified": "2025-04-28 16:13:16.956546",
  "modified_by": "Administrator",
  "module": "Custom",
- "name": "car",
+ "name": "TravelFees",
  "owner": "Administrator",
  "permissions": [
   {

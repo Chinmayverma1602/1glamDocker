@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class Testcar(FrappeTestCase):
+class TestTravelFees(FrappeTestCase):
 	pass

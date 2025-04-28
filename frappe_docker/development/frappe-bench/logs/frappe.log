@@ -1,3 +1,30 @@
 2025-04-28 08:07:04,977 ERROR frappe New Exception collected with id: 2025-04-28 08:07:04.492290-127.0.0.1-d58
 Site: development.localhost
 Form Dict: {}
+2025-04-28 10:31:49,055 ERROR frappe New Exception collected with id: 2025-04-28 10:31:48.838772-127.0.0.1-daa
+Site: development.localhost
+Form Dict: {'user': 'Guest', 'fee_type': 'per_km, per_trip', 'fee': 10, 'max_distance': 50}
+2025-04-28 10:31:56,596 ERROR frappe New Exception collected with id: 2025-04-28 10:31:56.586105-127.0.0.1-6eb
+Site: development.localhost
+Form Dict: {'user': 'Guest', 'fee_type': 'per_km, per_trip', 'fee': 10, 'max_distance': 50}
+2025-04-28 10:32:15,959 ERROR frappe New Exception collected with id: 2025-04-28 10:32:15.952697-127.0.0.1-f1d
+Site: development.localhost
+Form Dict: {'user': 'Guest', 'fee_type': 'per_km, per_trip', 'fee': 10, 'max_distance': 50}
+2025-04-28 10:33:19,796 ERROR frappe New Exception collected with id: 2025-04-28 10:33:19.788506-127.0.0.1-357
+Site: development.localhost
+Form Dict: {'user': 'Guest', 'fee_type': 'per_km, per_trip', 'fee': 10, 'max_distance': 50}
+2025-04-28 10:35:34,705 ERROR frappe New Exception collected with id: 2025-04-28 10:35:34.697176-127.0.0.1-2e2
+Site: development.localhost
+Form Dict: {'user': 'Guest', 'fee_type': 'per_km, per_trip', 'fee': 10, 'max_distance': 50}
+2025-04-28 10:37:24,376 ERROR frappe New Exception collected with id: 2025-04-28 10:37:24.369072-127.0.0.1-a83
+Site: development.localhost
+Form Dict: {'user': 'Guest', 'fee_type': 'per_km, per_trip', 'fee': 10, 'max_distance': 50}
+2025-04-28 10:37:53,549 ERROR frappe New Exception collected with id: 2025-04-28 10:37:53.541448-127.0.0.1-5fd
+Site: development.localhost
+Form Dict: {'user': 'Guest', 'fee_type': 'per_km, per_trip', 'fee': 10, 'max_distance': 50}
+2025-04-28 10:38:04,843 ERROR frappe New Exception collected with id: 2025-04-28 10:38:04.817205-127.0.0.1-6df
+Site: development.localhost
+Form Dict: {'user': 'Guest', 'fee_type': 'per_km, per_trip', 'fee': 10, 'max_distance': 50}
+2025-04-28 10:39:04,014 ERROR frappe New Exception collected with id: 2025-04-28 10:39:04.005104-127.0.0.1-b85
+Site: development.localhost
+Form Dict: {'user': 'Guest', 'fee_type': 'per_km, per_trip', 'fee': 10, 'max_distance': 50}

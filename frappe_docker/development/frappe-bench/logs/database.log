@@ -1155,3 +1155,87 @@ create table `tabLeads` (
 			ROW_FORMAT=DYNAMIC
 			CHARACTER SET=utf8mb4
 			COLLATE=utf8mb4_unicode_ci
+2025-04-28 15:28:36,487 WARNING database DDL Query made to DB:
+create table `tabuserBookings` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`customer_name` varchar(140),
+`user` varchar(140),
+`booking_time` time(6),
+`booking_date` date,
+`service_name` varchar(140),
+`lead_status` varchar(140),
+`phone_number` varchar(140),
+`price` varchar(140),
+`notes` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+
+			index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-04-28 15:28:36,487 WARNING database DDL Query made to DB:
+create table `tabuserBookings` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`customer_name` varchar(140),
+`user` varchar(140),
+`booking_time` time(6),
+`booking_date` date,
+`service_name` varchar(140),
+`lead_status` varchar(140),
+`phone_number` varchar(140),
+`price` varchar(140),
+`notes` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+
+			index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-04-28 15:28:36,487 WARNING database DDL Query made to DB:
+create table `tabuserBookings` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`customer_name` varchar(140),
+`user` varchar(140),
+`booking_time` time(6),
+`booking_date` date,
+`service_name` varchar(140),
+`lead_status` varchar(140),
+`phone_number` varchar(140),
+`price` varchar(140),
+`notes` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+
+			index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
